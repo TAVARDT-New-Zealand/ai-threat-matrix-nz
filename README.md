@@ -79,13 +79,8 @@ jobs:
 ## Compliance and Technical Standards
 
 - **Compliance Standard**: OWASP Top 10 for LLM Applications & MITRE ATLAS
-- **Maintaining Organization**: [TAVARDT-New-Zealand](https://github.com/TAVARDT-New-Zealand)
 
-## Official Portals
 
-- **Main National Portal**: [Portal Institucional](https://ag.tavardt.com/nz/)
-- **Tools Hub**: [Central de Ferramentas](https://tools.tavardt.com/nz/)
-- **Technical Support Channel**: [Canal de Contato](https://ag.tavardt.com/nz/contact/)
 
 ***
 
