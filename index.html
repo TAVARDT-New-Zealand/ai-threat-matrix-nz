@@ -19,18 +19,8 @@
 <link rel="icon" type="image/x-icon" href="./favicon.ico">
 <link href="./favicon.ico" rel="shortcut icon"/>
 <link href="https://tavardt-new-zealand.github.io/ai-threat-matrix-nz/" rel="canonical"/>
-<link href="https://tavardt-brasil.github.io/ai-threat-matrix-br/" hreflang="pt-BR" rel="alternate"/>
-<link href="https://tavardt-portugal.github.io/ai-threat-matrix-pt/" hreflang="pt-PT" rel="alternate"/>
-<link href="https://tavardt-usa.github.io/ai-threat-matrix-us/" hreflang="en-US" rel="alternate"/>
-<link href="https://tavardt-uk.github.io/ai-threat-matrix-uk/" hreflang="en-GB" rel="alternate"/>
-<link href="https://tavardt-canada.github.io/ai-threat-matrix-ca/" hreflang="en-CA" rel="alternate"/>
-<link href="https://tavardt-australia.github.io/ai-threat-matrix-au/" hreflang="en-AU" rel="alternate"/>
 <link href="https://tavardt-new-zealand.github.io/ai-threat-matrix-nz/" hreflang="en-NZ" rel="alternate"/>
-<link href="https://tavardt-espana.github.io/ai-threat-matrix-es/" hreflang="es-ES" rel="alternate"/>
-<link href="https://tavardt-mexico.github.io/ai-threat-matrix-mx/" hreflang="es-MX" rel="alternate"/>
-<link href="https://tavardt-france.github.io/ai-threat-matrix-fr/" hreflang="fr-FR" rel="alternate"/>
-<link href="https://tavardt-italia.github.io/ai-threat-matrix-it/" hreflang="it-IT" rel="alternate"/>
-<link href="https://tavardt-usa.github.io/ai-threat-matrix-us/" hreflang="x-default" rel="alternate"/>
+<link href="https://tavardt-new-zealand.github.io/ai-threat-matrix-nz/" hreflang="x-default" rel="alternate"/>
 <meta content="index, follow" name="robots"/>
 <meta content="website" property="og:type"/>
 <meta content="TAVARDT" property="og:site_name"/>
@@ -62,7 +52,7 @@
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "NZD"
+        "priceCurrency": "CAD"
       },
       "publisher": {
         "@type": "Organization",
@@ -159,32 +149,20 @@
 }
 </script>
 <style>
-    :root {
-      --bg: #060913;
-      --card-bg: #0e1726;
-      --card-border: #1e293b;
-      --accent: #38bdf8;
-      --accent-hover: #0284c7;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --pass: #10b981;
-      --warn: #f59e0b;
-      --fail: #ef4444;
-      --info: #818cf8;
-      --code-bg: #020617;
-    }
+    
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { overflow-x: hidden; max-width: 100vw; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
+      background-color: #060913;
+      color: #f8fafc;
       line-height: 1.5;
       padding-bottom: 60px;
     }
     header {
       background-color: rgba(14, 23, 38, 0.95);
       backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--card-border);
+      border-bottom: 1px solid #1e293b;
       padding: 16px 24px;
       display: flex;
       justify-content: space-between;
@@ -201,7 +179,7 @@
     }
     .brand-sub {
       font-size: 0.78rem;
-      color: var(--accent);
+      color: #38bdf8;
       font-weight: 500;
     }
     .nav-links {
@@ -209,13 +187,13 @@
       gap: 16px;
     }
     .nav-links a {
-      color: var(--text-muted);
+      color: #94a3b8;
       text-decoration: none;
       font-size: 0.85rem;
       transition: color 0.2s;
     }
     .nav-links a:hover {
-      color: var(--accent);
+      color: #38bdf8;
     }
     .container {
       max-width: 1200px;
@@ -231,13 +209,13 @@
       font-weight: 800;
       letter-spacing: -0.03em;
       margin-bottom: 10px;
-      background: linear-gradient(135deg, #fff 40%, var(--accent) 100%);
+      background: linear-gradient(135deg, #fff 40%, #38bdf8 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .hero p {
       font-size: 1rem;
-      color: var(--text-muted);
+      color: #94a3b8;
       max-width: 820px;
       margin: 0 auto 16px;
     }
@@ -256,7 +234,7 @@
       font-size: 0.75rem;
       font-weight: 600;
       background-color: rgba(56, 189, 248, 0.1);
-      color: var(--accent);
+      color: #38bdf8;
       border: 1px solid rgba(56, 189, 248, 0.25);
     }
     .grid-dashboard {
@@ -271,8 +249,8 @@
       }
     }
     .card {
-      background-color: var(--card-bg);
-      border: 1px solid var(--card-border);
+      background-color: #0e1726;
+      border: 1px solid #1e293b;
       border-radius: 12px;
       padding: 24px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -285,7 +263,7 @@
     }
     .card-desc {
       font-size: 0.85rem;
-      color: var(--text-muted);
+      color: #94a3b8;
       margin-bottom: 20px;
     }
     .arch-selector {
@@ -295,9 +273,9 @@
       margin-bottom: 20px;
     }
     .arch-btn {
-      background-color: var(--code-bg);
-      border: 1px solid var(--card-border);
-      color: var(--text-muted);
+      background-color: #020617;
+      border: 1px solid #1e293b;
+      color: #94a3b8;
       padding: 10px;
       border-radius: 8px;
       cursor: pointer;
@@ -307,13 +285,13 @@
       transition: all 0.2s;
     }
     .arch-btn:hover {
-      border-color: var(--accent);
-      color: var(--text);
+      border-color: #38bdf8;
+      color: #f8fafc;
     }
     .arch-btn.active {
       background-color: rgba(56, 189, 248, 0.15);
-      border-color: var(--accent);
-      color: var(--accent);
+      border-color: #38bdf8;
+      color: #38bdf8;
     }
     .arch-btn span {
       display: block;
@@ -328,13 +306,13 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: linear-gradient(180deg, var(--card-bg) 0%, rgba(14, 23, 38, 0.7) 100%);
+      background: linear-gradient(180deg, #0e1726 0%, rgba(14, 23, 38, 0.7) 100%);
     }
     .score-circle {
       width: 140px;
       height: 140px;
       border-radius: 50%;
-      border: 8px solid var(--card-border);
+      border: 8px solid #1e293b;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -349,7 +327,7 @@
     }
     .score-label {
       font-size: 0.75rem;
-      color: var(--text-muted);
+      color: #94a3b8;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -365,7 +343,7 @@
       gap: 16px;
       width: 100%;
       justify-content: space-around;
-      border-top: 1px solid var(--card-border);
+      border-top: 1px solid #1e293b;
       padding-top: 16px;
     }
     .mini-stat {
@@ -378,12 +356,12 @@
     }
     .mini-stat-lbl {
       font-size: 0.7rem;
-      color: var(--text-muted);
+      color: #94a3b8;
       text-transform: uppercase;
     }
     .threat-item {
-      background-color: var(--code-bg);
-      border: 1px solid var(--card-border);
+      background-color: #020617;
+      border: 1px solid #1e293b;
       border-radius: 8px;
       padding: 14px 16px;
       margin-bottom: 10px;
@@ -402,7 +380,7 @@
     .threat-code {
       font-size: 0.72rem;
       font-family: monospace;
-      color: var(--accent);
+      color: #38bdf8;
       font-weight: 700;
       text-transform: uppercase;
     }
@@ -414,7 +392,7 @@
     }
     .threat-desc {
       font-size: 0.78rem;
-      color: var(--text-muted);
+      color: #94a3b8;
       margin-top: 2px;
     }
     .status-group {
@@ -424,9 +402,9 @@
     .btn-status {
       padding: 6px 12px;
       border-radius: 6px;
-      border: 1px solid var(--card-border);
-      background-color: var(--card-bg);
-      color: var(--text-muted);
+      border: 1px solid #1e293b;
+      background-color: #0e1726;
+      color: #94a3b8;
       font-size: 0.75rem;
       font-weight: 600;
       cursor: pointer;
@@ -437,22 +415,22 @@
     }
     .btn-status.active-defended {
       background-color: rgba(16, 185, 129, 0.15);
-      border-color: var(--pass);
-      color: var(--pass);
+      border-color: #10b981;
+      color: #10b981;
     }
     .btn-status.active-partial {
       background-color: rgba(245, 158, 11, 0.15);
-      border-color: var(--warn);
-      color: var(--warn);
+      border-color: #f59e0b;
+      color: #f59e0b;
     }
     .btn-status.active-exposed {
       background-color: rgba(239, 68, 68, 0.15);
-      border-color: var(--fail);
-      color: var(--fail);
+      border-color: #ef4444;
+      color: #ef4444;
     }
     .btn-action-main {
       width: 100%;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+      background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
       color: #000;
       font-weight: 700;
       font-size: 0.95rem;
@@ -469,8 +447,8 @@
     .btn-action-secondary {
       width: 100%;
       background-color: transparent;
-      border: 1px solid var(--card-border);
-      color: var(--text);
+      border: 1px solid #1e293b;
+      color: #f8fafc;
       font-weight: 600;
       font-size: 0.85rem;
       padding: 10px 16px;
@@ -480,14 +458,14 @@
       transition: all 0.2s;
     }
     .btn-action-secondary:hover {
-      border-color: var(--text-muted);
-      background-color: var(--code-bg);
+      border-color: #94a3b8;
+      background-color: #020617;
     }
     .blueprint-output {
       width: 100%;
       height: 280px;
-      background-color: var(--code-bg);
-      border: 1px solid var(--card-border);
+      background-color: #020617;
+      border: 1px solid #1e293b;
       border-radius: 8px;
       color: #e2e8f0;
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -501,20 +479,20 @@
       max-width: 1200px;
       margin: 40px auto 0;
       padding: 24px 20px 0;
-      border-top: 1px solid var(--card-border);
+      border-top: 1px solid #1e293b;
       text-align: left !important;
       font-size: 0.82rem;
-      color: var(--text-muted);
+      color: #94a3b8;
     }
     footer a {
-      color: var(--accent);
+      color: #38bdf8;
       text-decoration: none;
     }
   
   /* AEO SECTION - CITABLE DEFINITION (MULTI-PARAGRAPH) */
   .aeo-section {
-    background: var(--surface, #0d1527);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0d1527;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 36px;
     margin-bottom: 48px;
@@ -541,7 +519,7 @@
   .aeo-content p {
     font-size: 0.95rem;
     line-height: 1.75;
-    color: var(--text-muted, #94a3b8);
+    color: #94a3b8;
     margin-bottom: 16px;
   }
   .aeo-content p:last-child {
@@ -554,8 +532,8 @@
 
   /* GEO SECTION - 2-COLUMN COMPARISON MATRIX */
   .geo-section {
-    background: var(--surface, #0d1527);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0d1527;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 36px;
     margin-bottom: 48px;
@@ -578,13 +556,13 @@
     .geo-grid { grid-template-columns: 1fr; }
   }
   .geo-col {
-    background: var(--surface-card, #0f172a);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 8px;
     padding: 24px;
   }
-  .geo-col.vuln { border-top: 4px solid var(--danger, #ef4444); }
-  .geo-col.hardened { border-top: 4px solid var(--success, #10b981); }
+  .geo-col.vuln { border-top: 4px solid #ef4444; }
+  .geo-col.hardened { border-top: 4px solid #10b981; }
   .geo-col-title {
     font-size: 1.05rem;
     font-weight: 800;
@@ -601,14 +579,14 @@
   }
   .geo-list li {
     font-size: 0.88rem;
-    color: var(--text-muted, #94a3b8);
+    color: #94a3b8;
     line-height: 1.5;
     display: flex;
     align-items: flex-start;
     gap: 10px;
   }
-  .geo-list .cross { color: var(--danger, #ef4444); font-weight: 900; }
-  .geo-list .check { color: var(--success, #10b981); font-weight: 900; }
+  .geo-list .cross { color: #ef4444; font-weight: 900; }
+  .geo-list .check { color: #10b981; font-weight: 900; }
 
   /* FAQ ACCORDION SECTION */
   .faq-section {
@@ -629,8 +607,8 @@
     gap: 12px;
   }
   .faq-item {
-    background: var(--surface, #0d1527);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0d1527;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 8px;
     overflow: hidden;
   }
@@ -651,12 +629,12 @@
     transition: color 0.2s ease;
   }
   .faq-question:hover {
-    color: var(--accent, #1e00ff);
+    color: #1e00ff;
   }
   .faq-icon {
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--text-subtle, #64748b);
+    color: #64748b;
     transition: transform 0.2s ease;
   }
   .faq-item.active .faq-icon {
@@ -666,7 +644,7 @@
     display: none;
     padding: 0 24px 18px;
     font-size: 0.88rem;
-    color: var(--text-muted, #94a3b8);
+    color: #94a3b8;
     line-height: 1.7;
     border-top: 1px solid rgba(255, 255, 255, 0.04);
   }
@@ -680,27 +658,10 @@
 /* ==========================================================================
    TAVARDT UNIFIED ENTERPRISE DESIGN SYSTEM (ASTRYX / AG-ONE TOKENS)
    ========================================================================== */
-:root {
-  --bg: #050510 !important;
-  --bg2: #0b101e !important;
-  --bg3: #111827 !important;
-  --card-bg: #0b101e !important;
-  --surface: #0b101e !important;
-  --surface-card: #0e1526 !important;
-  --surface-elevated: #131d33 !important;
-  --card-border: rgba(255, 255, 255, 0.08) !important;
-  --border: rgba(255, 255, 255, 0.08) !important;
-  --accent: #1e00ff !important;
-  --accent-hover: #1500db !important;
-  --blue: #839bc8 !important;
-  --info: #1e00ff !important;
-  --text: #f8fafc !important;
-  --text-muted: #94a3b8 !important;
-  --text2: #94a3b8 !important;
-  --code-bg: #030712 !important;
-}
 
-html, body {
+
+html, html, body { overflow-x: hidden; max-width: 100vw; }
+    body {
   background-color: #050510 !important;
   color: #f8fafc !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
@@ -1235,8 +1196,8 @@ footer a:hover,
   gap: 10px !important;
   flex-wrap: wrap !important;
   margin-bottom: 24px !important;
-  background: var(--card-bg) !important;
-  border: 1px solid var(--border) !important;
+  background: #0e1726 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   padding: 12px 16px !important;
   border-radius: 12px !important;
   align-items: center !important;
@@ -1250,9 +1211,9 @@ footer a:hover,
   margin-right: 8px !important;
 }
 .arch-chip {
-  background: var(--card-surface) !important;
-  border: 1px solid var(--border) !important;
-  color: var(--text-muted) !important;
+  background: #111d33 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #94a3b8 !important;
   padding: 8px 14px !important;
   border-radius: 8px !important;
   cursor: pointer !important;
@@ -1273,8 +1234,8 @@ footer a:hover,
 
 /* GLOBAL SCORE BAR */
 .global-score-bar {
-  background: var(--card-bg) !important;
-  border: 1px solid var(--border) !important;
+  background: #0e1726 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 14px !important;
   padding: 18px 24px !important;
   margin-bottom: 20px !important;
@@ -1295,7 +1256,7 @@ footer a:hover,
   font-size: 2.2rem !important;
   font-weight: 800 !important;
   font-family: 'Fira Code', Consolas, monospace !important;
-  color: var(--fail) !important;
+  color: #ef4444 !important;
   line-height: 1 !important;
 }
 .score-label-wrap h4 {
@@ -1306,7 +1267,7 @@ footer a:hover,
 }
 .score-label-wrap p {
   font-size: 0.8rem !important;
-  color: var(--text-muted) !important;
+  color: #94a3b8 !important;
   margin: 0 !important;
 }
 .score-pills {
@@ -1315,25 +1276,25 @@ footer a:hover,
   flex-wrap: wrap !important;
 }
 .score-pill {
-  background: var(--card-surface) !important;
-  border: 1px solid var(--border) !important;
+  background: #111d33 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   padding: 6px 14px !important;
   border-radius: 9999px !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
 }
 .score-pill.def {
-  color: var(--pass) !important;
+  color: #10b981 !important;
   border-color: rgba(16, 185, 129, 0.3) !important;
   background: rgba(16, 185, 129, 0.08) !important;
 }
 .score-pill.part {
-  color: var(--warn) !important;
+  color: #f59e0b !important;
   border-color: rgba(245, 158, 11, 0.3) !important;
   background: rgba(245, 158, 11, 0.08) !important;
 }
 .score-pill.exp {
-  color: var(--fail) !important;
+  color: #ef4444 !important;
   border-color: rgba(239, 68, 68, 0.3) !important;
   background: rgba(239, 68, 68, 0.08) !important;
 }
@@ -1357,9 +1318,9 @@ footer a:hover,
   box-shadow: 0 0 35px rgba(30, 0, 255, 0.8) !important;
 }
 .btn-action-secondary {
-  background: var(--card-surface) !important;
+  background: #111d33 !important;
   color: #cbd5e1 !important;
-  border: 1px solid var(--border) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 9999px !important;
   padding: 11px 20px !important;
   font-size: 0.88rem !important;
@@ -1387,8 +1348,8 @@ footer a:hover,
   }
 }
 .card-2x5 {
-  background: var(--card-bg) !important;
-  border: 1px solid var(--border) !important;
+  background: #0e1726 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 14px !important;
   padding: 22px !important;
   display: flex !important;
@@ -1412,9 +1373,9 @@ footer a:hover,
   font-size: 0.75rem !important;
   padding: 6px 12px !important;
   border-radius: 6px !important;
-  border: 1px solid var(--border) !important;
-  background: var(--card-surface) !important;
-  color: var(--text-muted) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: #111d33 !important;
+  color: #94a3b8 !important;
   cursor: pointer !important;
   transition: all 0.2s ease !important;
   font-weight: 600 !important;
@@ -1450,8 +1411,8 @@ footer a:hover,
   gap: 10px !important;
   flex-wrap: wrap !important;
   margin-bottom: 24px !important;
-  background: var(--card-bg) !important;
-  border: 1px solid var(--border) !important;
+  background: #0e1726 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   padding: 12px 16px !important;
   border-radius: 12px !important;
   align-items: center !important;
@@ -1465,9 +1426,9 @@ footer a:hover,
   margin-right: 8px !important;
 }
 .arch-chip {
-  background: var(--card-surface) !important;
-  border: 1px solid var(--border) !important;
-  color: var(--text-muted) !important;
+  background: #111d33 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #94a3b8 !important;
   padding: 8px 14px !important;
   border-radius: 8px !important;
   cursor: pointer !important;
@@ -1488,8 +1449,8 @@ footer a:hover,
 
 /* GLOBAL SCORE BAR */
 .global-score-bar {
-  background: var(--card-bg) !important;
-  border: 1px solid var(--border) !important;
+  background: #0e1726 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 14px !important;
   padding: 18px 24px !important;
   margin-bottom: 28px !important;
@@ -1510,7 +1471,7 @@ footer a:hover,
   font-size: 2.2rem !important;
   font-weight: 800 !important;
   font-family: 'Fira Code', Consolas, monospace !important;
-  color: var(--fail) !important;
+  color: #ef4444 !important;
   line-height: 1 !important;
 }
 .score-label-wrap h4 {
@@ -1521,7 +1482,7 @@ footer a:hover,
 }
 .score-label-wrap p {
   font-size: 0.8rem !important;
-  color: var(--text-muted) !important;
+  color: #94a3b8 !important;
   margin: 0 !important;
 }
 .score-pills {
@@ -1530,25 +1491,25 @@ footer a:hover,
   flex-wrap: wrap !important;
 }
 .score-pill {
-  background: var(--card-surface) !important;
-  border: 1px solid var(--border) !important;
+  background: #111d33 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   padding: 6px 14px !important;
   border-radius: 9999px !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
 }
 .score-pill.def {
-  color: var(--pass) !important;
+  color: #10b981 !important;
   border-color: rgba(16, 185, 129, 0.3) !important;
   background: rgba(16, 185, 129, 0.08) !important;
 }
 .score-pill.part {
-  color: var(--warn) !important;
+  color: #f59e0b !important;
   border-color: rgba(245, 158, 11, 0.3) !important;
   background: rgba(245, 158, 11, 0.08) !important;
 }
 .score-pill.exp {
-  color: var(--fail) !important;
+  color: #ef4444 !important;
   border-color: rgba(239, 68, 68, 0.3) !important;
   background: rgba(239, 68, 68, 0.08) !important;
 }
@@ -1573,9 +1534,9 @@ footer a:hover,
   box-shadow: 0 0 35px rgba(30, 0, 255, 0.8) !important;
 }
 .btn-action-secondary {
-  background: var(--card-surface) !important;
+  background: #111d33 !important;
   color: #cbd5e1 !important;
-  border: 1px solid var(--border) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 9999px !important;
   padding: 11px 20px !important;
   font-size: 0.88rem !important;
@@ -1603,8 +1564,8 @@ footer a:hover,
   }
 }
 .card-2x5 {
-  background: var(--card-bg) !important;
-  border: 1px solid var(--border) !important;
+  background: #0e1726 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 14px !important;
   padding: 22px !important;
   display: flex !important;
@@ -1628,9 +1589,9 @@ footer a:hover,
   font-size: 0.75rem !important;
   padding: 6px 12px !important;
   border-radius: 6px !important;
-  border: 1px solid var(--border) !important;
-  background: var(--card-surface) !important;
-  color: var(--text-muted) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: #111d33 !important;
+  color: #94a3b8 !important;
   cursor: pointer !important;
   transition: all 0.2s ease !important;
   font-weight: 600 !important;
@@ -1660,8 +1621,8 @@ footer a:hover,
 
   /* AEO SECTION - CITABLE DEFINITION (MULTI-PARAGRAPH) */
   .aeo-section {
-    background: var(--surface, #0d1527);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0d1527;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 36px;
     margin-bottom: 48px;
@@ -1688,7 +1649,7 @@ footer a:hover,
   .aeo-content p {
     font-size: 0.95rem;
     line-height: 1.75;
-    color: var(--text-muted, #94a3b8);
+    color: #94a3b8;
     margin-bottom: 16px;
   }
   .aeo-content p:last-child {
@@ -1701,8 +1662,8 @@ footer a:hover,
 
   /* GEO SECTION - 2-COLUMN COMPARISON MATRIX */
   .geo-section {
-    background: var(--surface, #0d1527);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0d1527;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 36px;
     margin-bottom: 48px;
@@ -1725,13 +1686,13 @@ footer a:hover,
     .geo-grid { grid-template-columns: 1fr; }
   }
   .geo-col {
-    background: var(--surface-card, #0f172a);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 8px;
     padding: 24px;
   }
-  .geo-col.vuln { border-top: 4px solid var(--danger, #ef4444); }
-  .geo-col.hardened { border-top: 4px solid var(--success, #10b981); }
+  .geo-col.vuln { border-top: 4px solid #ef4444; }
+  .geo-col.hardened { border-top: 4px solid #10b981; }
   .geo-col-title {
     font-size: 1.05rem;
     font-weight: 800;
@@ -1748,14 +1709,14 @@ footer a:hover,
   }
   .geo-list li {
     font-size: 0.88rem;
-    color: var(--text-muted, #94a3b8);
+    color: #94a3b8;
     line-height: 1.5;
     display: flex;
     align-items: flex-start;
     gap: 10px;
   }
-  .geo-list .cross { color: var(--danger, #ef4444); font-weight: 900; }
-  .geo-list .check { color: var(--success, #10b981); font-weight: 900; }
+  .geo-list .cross { color: #ef4444; font-weight: 900; }
+  .geo-list .check { color: #10b981; font-weight: 900; }
 
   /* FAQ ACCORDION SECTION */
   .faq-section {
@@ -1776,8 +1737,8 @@ footer a:hover,
     gap: 12px;
   }
   .faq-item {
-    background: var(--surface, #0d1527);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0d1527;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 8px;
     overflow: hidden;
   }
@@ -1798,12 +1759,12 @@ footer a:hover,
     transition: color 0.2s ease;
   }
   .faq-question:hover {
-    color: var(--accent, #1e00ff);
+    color: #1e00ff;
   }
   .faq-icon {
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--text-subtle, #64748b);
+    color: #64748b;
     transition: transform 0.2s ease;
   }
   .faq-item.active .faq-icon {
@@ -1813,7 +1774,7 @@ footer a:hover,
     display: none;
     padding: 0 24px 18px;
     font-size: 0.88rem;
-    color: var(--text-muted, #94a3b8);
+    color: #94a3b8;
     line-height: 1.7;
     border-top: 1px solid rgba(255, 255, 255, 0.04);
   }
@@ -1871,8 +1832,8 @@ footer > div:first-child {
 
   /* AEO SECTION - CITABLE DEFINITION (MULTI-PARAGRAPH) */
   .aeo-section {
-    background: var(--surface, #0d1527);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0d1527;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 36px;
     margin-bottom: 48px;
@@ -1899,7 +1860,7 @@ footer > div:first-child {
   .aeo-content p {
     font-size: 0.95rem;
     line-height: 1.75;
-    color: var(--text-muted, #94a3b8);
+    color: #94a3b8;
     margin-bottom: 16px;
   }
   .aeo-content p:last-child {
@@ -1912,8 +1873,8 @@ footer > div:first-child {
 
   /* GEO SECTION - 2-COLUMN COMPARISON MATRIX */
   .geo-section {
-    background: var(--surface, #0d1527);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0d1527;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 36px;
     margin-bottom: 48px;
@@ -1936,13 +1897,13 @@ footer > div:first-child {
     .geo-grid { grid-template-columns: 1fr; }
   }
   .geo-col {
-    background: var(--surface-card, #0f172a);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 8px;
     padding: 24px;
   }
-  .geo-col.vuln { border-top: 4px solid var(--danger, #ef4444); }
-  .geo-col.hardened { border-top: 4px solid var(--success, #10b981); }
+  .geo-col.vuln { border-top: 4px solid #ef4444; }
+  .geo-col.hardened { border-top: 4px solid #10b981; }
   .geo-col-title {
     font-size: 1.05rem;
     font-weight: 800;
@@ -1959,14 +1920,14 @@ footer > div:first-child {
   }
   .geo-list li {
     font-size: 0.88rem;
-    color: var(--text-muted, #94a3b8);
+    color: #94a3b8;
     line-height: 1.5;
     display: flex;
     align-items: flex-start;
     gap: 10px;
   }
-  .geo-list .cross { color: var(--danger, #ef4444); font-weight: 900; }
-  .geo-list .check { color: var(--success, #10b981); font-weight: 900; }
+  .geo-list .cross { color: #ef4444; font-weight: 900; }
+  .geo-list .check { color: #10b981; font-weight: 900; }
 
   /* FAQ ACCORDION SECTION */
   .faq-section {
@@ -1987,8 +1948,8 @@ footer > div:first-child {
     gap: 12px;
   }
   .faq-item {
-    background: var(--surface, #0d1527);
-    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    background: #0d1527;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 8px;
     overflow: hidden;
   }
@@ -2009,12 +1970,12 @@ footer > div:first-child {
     transition: color 0.2s ease;
   }
   .faq-question:hover {
-    color: var(--accent, #1e00ff);
+    color: #1e00ff;
   }
   .faq-icon {
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--text-subtle, #64748b);
+    color: #64748b;
     transition: transform 0.2s ease;
   }
   .faq-item.active .faq-icon {
@@ -2024,7 +1985,7 @@ footer > div:first-child {
     display: none;
     padding: 0 24px 18px;
     font-size: 0.88rem;
-    color: var(--text-muted, #94a3b8);
+    color: #94a3b8;
     line-height: 1.7;
     border-top: 1px solid rgba(255, 255, 255, 0.04);
   }
@@ -2034,7 +1995,7 @@ footer > div:first-child {
 
 </style>
   <meta name="ai-content-declaration" content="canonical-knowledge-base, expert-curated">
-  <meta name="geo.region" content="NZ">
+  <meta name="geo.region" content="CA">
 </head>
 <body>
 
@@ -2091,7 +2052,7 @@ footer > div:first-child {
       </button>
 </div>
 
-<div class="card" id="blueprint-card" style="display: none; margin-bottom: 32px; border-color: #1e00ff;">
+<div class="card" id="blueprint-card" style="display: block; margin-bottom: 32px; border-color: #1e00ff;">
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
 <div class="card-title" style="margin: 0; font-size: 1.15rem; font-weight: 700; color: #ffffff;">AI Security Hardening Blueprint</div>
 <div style="display: flex; gap: 10px;">
@@ -2099,7 +2060,9 @@ footer > div:first-child {
 <button class="btn-action-secondary" id="btn-dl-bp" style="width: auto; margin: 0; padding: 8px 16px; font-size: 0.82rem;">Download ai-hardening-blueprint.md</button>
 </div>
 </div>
-<textarea class="blueprint-output" id="blueprint-area" readonly="" style="width: 100%; height: 260px; background: #050510; border: 1px solid var(--border); border-radius: 8px; color: #839bc8; font-family: 'Fira Code', monospace; font-size: 0.85rem; padding: 14px; box-sizing: border-box; resize: vertical;"></textarea>
+<textarea class="blueprint-output" id="blueprint-area" style="width: 100%; height: 160px; background: #050510; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; color: #839bc8; font-family: monospace; font-size: 0.85rem; padding: 12px; box-sizing: border-box; resize: vertical;"># AI Security Hardening Blueprint for New Zealand Sovereign Infrastructure
+# Status: Verified</textarea>
+<pre id="blueprint-code-box" style="margin-top: 12px; padding: 12px; background: #020617; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 6px; overflow-x: auto; white-space: pre-wrap; word-break: break-all; max-width: 100%; box-sizing: border-box;"><code id="blueprint-code" style="color: #6ee7b7; font-family: monospace; font-size: 0.82rem;"># Deterministic MITRE ATLAS &amp; OWASP Top 10 Hardening Specification</code></pre>
 </div>
 </div>
 <div class="container">
@@ -2150,22 +2113,22 @@ footer > div:first-child {
         <div class="geo-col vuln">
           <h3 class="geo-col-title">Unmodeled AI Deployment (Critical Risk)</h3>
           <ul class="geo-list">
-            <li><span class="cross">✕</span> Production model deployment without structured threat modeling against MITRE ATLAS matrices.</li>
-<li><span class="cross">✕</span> Unverified consumption of third-party model weights from public model hubs without provenance.</li>
-<li><span class="cross">✕</span> Total absence of semantic telemetry detecting coordinated adversarial probing or extraction.</li>
-<li><span class="cross">✕</span> Zero documented incident response playbooks for AI-specific operational compromises.</li>
-<li><span class="cross">✕</span> Vulnerability to model extraction and training data reconstruction attacks via repetitive querying.</li>
+            <li>✗ Production model deployment without structured threat modeling against MITRE ATLAS matrices.</li>
+<li>✗ Unverified consumption of third-party model weights from public model hubs without provenance.</li>
+<li>✗ Total absence of semantic telemetry detecting coordinated adversarial probing or extraction.</li>
+<li>✗ Zero documented incident response playbooks for AI-specific operational compromises.</li>
+<li>✗ Vulnerability to model extraction and training data reconstruction attacks via repetitive querying.</li>
 
           </ul>
         </div>
         <div class="geo-col hardened">
           <h3 class="geo-col-title">Hardened TAVARDT AI Threat Governance (Zero Trust)</h3>
           <ul class="geo-list">
-            <li><span class="check">✓</span> Exhaustive threat modeling aligned with MITRE ATLAS matrices and OWASP LLM Top 10.</li>
-<li><span class="check">✓</span> Cryptographic signature verification ensuring model weight integrity prior to GPU loading.</li>
-<li><span class="check">✓</span> Real-time semantic telemetry alerting on anomalous prompt distributions and automated fuzzing.</li>
-<li><span class="check">✓</span> Automated incident response playbooks containing real-time model isolation capabilities.</li>
-<li><span class="check">✓</span> Context-layer sandboxing and query entropy monitoring preventing model inversion attacks.</li>
+            <li>✓ Exhaustive threat modeling aligned with MITRE ATLAS matrices and OWASP LLM Top 10.</li>
+<li>✓ Cryptographic signature verification ensuring model weight integrity prior to GPU loading.</li>
+<li>✓ Real-time semantic telemetry alerting on anomalous prompt distributions and automated fuzzing.</li>
+<li>✓ Automated incident response playbooks containing real-time model isolation capabilities.</li>
+<li>✓ Context-layer sandboxing and query entropy monitoring preventing model inversion attacks.</li>
 
           </ul>
         </div>
@@ -2175,47 +2138,33 @@ footer > div:first-child {
     <section class="faq-section">
       <h2 class="faq-title">Frequently Asked Questions on AI Threat Matrix</h2>
       <div class="faq-list">
-        
         <div class="faq-item">
           <button class="faq-question" type="button" onclick="toggleFaq(this)">
-            <span>What is the MITRE ATLAS matrix and how does it safeguard enterprises?</span>
+            What is the MITRE ATLAS matrix and how does it safeguard enterprises?
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
             <p>MITRE ATLAS catalogs real-world adversary tactics, techniques, and procedures (TTPs) targeting AI, enabling teams to build proactive defenses against machine learning attacks.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question" type="button" onclick="toggleFaq(this)">
-            <span>How does OWASP Top 10 for LLMs differ from traditional application security?</span>
+            How does OWASP Top 10 for LLMs differ from traditional application security?
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>It addresses unique vulnerabilities inherent to generative AI architectures, including prompt injection, insecure output handling, and supply chain poisoning.</p>
+            <p>It addresses unique vulnerabilities inherent to generative AI such as prompt injection, model denial of service, training data poisoning, and unauthorized autonomous tool execution.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question" type="button" onclick="toggleFaq(this)">
-            <span>What constitutes a model inversion attack in production?</span>
+            How does TAVARDT enforce deterministic AI pipeline security?
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>An attack where adversaries send structured queries to mathematically deduce sensitive training data or intellectual property embedded in the model weights.</p>
+            <p>Through layered guardrails, strict input sanitization, isolated execution boundaries, and continuous automated verification against sovereign standards.</p>
           </div>
         </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" onclick="toggleFaq(this)">
-            <span>How does TAVARDT implement AI threat governance?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>We perform red-teaming simulations, map system architectures against MITRE ATLAS matrices, and deploy real-time monitoring to defend enterprise AI assets.</p>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -2303,21 +2252,21 @@ footer > div:first-child {
         if (statScore) statScore.textContent = scoreRounded + " / 100";
 
         if (scoreRounded >= 85) {
-          if (statScore) statScore.style.color = "var(--pass)";
+          if (statScore) statScore.style.color = "#10b981";
           if (statPosture) {
-            statPosture.style.color = "var(--pass)";
+            statPosture.style.color = "#10b981";
             statPosture.textContent = "Hardened Posture (HARDENED)";
           }
         } else if (scoreRounded >= 60) {
-          if (statScore) statScore.style.color = "var(--warn)";
+          if (statScore) statScore.style.color = "#f59e0b";
           if (statPosture) {
-            statPosture.style.color = "var(--warn)";
+            statPosture.style.color = "#f59e0b";
             statPosture.textContent = "Developing Posture (DEVELOPING)";
           }
         } else {
-          if (statScore) statScore.style.color = "var(--fail)";
+          if (statScore) statScore.style.color = "#ef4444";
           if (statPosture) {
-            statPosture.style.color = "var(--fail)";
+            statPosture.style.color = "#ef4444";
             statPosture.textContent = "Critical Posture (VULNERABLE)";
           }
         }
@@ -2336,31 +2285,23 @@ footer > div:first-child {
         threatList.innerHTML = "";
         threats.forEach(t => {
           const curState = threatStates[t.id];
-          const statusColor = curState === 'defended' ? 'var(--pass)' : (curState === 'partial' ? 'var(--warn)' : 'var(--fail)');
+          const statusColor = curState === 'defended' ? '#10b981' : (curState === 'partial' ? '#f59e0b' : '#ef4444');
           const statusText = curState === 'defended' ? 'DEFENDED' : (curState === 'partial' ? 'PARTIAL' : 'VULNERABLE');
 
           const item = document.createElement("div");
           item.className = "card-2x5";
 
+                    const nextVal = curState === 'exposed' ? 'partial' : (curState === 'partial' ? 'defended' : 'exposed');
           item.innerHTML = `
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                <span style="font-size: 0.75rem; font-family: 'Fira Code', Consolas, monospace; color: #839bc8; font-weight: 700;">${t.code}</span>
-                <span style="font-size: 0.72rem; color: var(--text-muted); background: var(--card-surface); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border);">Weight: ${t.weight} pts</span>
-              </div>
-              <h4 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; margin-bottom: 8px; line-height: 1.35;">${t.title}</h4>
-              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 16px;">${t.desc}</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <strong style="font-size: 0.78rem; font-family: monospace; color: #839bc8;">${t.code}</strong>
+              <span style="font-size: 0.75rem; color: #94a3b8;">${t.weight} pts</span>
             </div>
-            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 14px; gap: 8px; flex-wrap: wrap;">
-              <span style="font-size: 0.78rem; font-weight: 600; color: ${statusColor};">
-                Status: ${statusText}
-              </span>
-              <div class="status-btn-group">
-                <button class="btn-stat ${curState === 'defended' ? 'act-def' : ''}" data-tid="${t.id}" data-val="defended">Defended</button>
-                <button class="btn-stat ${curState === 'partial' ? 'act-part' : ''}" data-tid="${t.id}" data-val="partial">Partial</button>
-                <button class="btn-stat ${curState === 'exposed' ? 'act-exp' : ''}" data-tid="${t.id}" data-val="exposed">Vulnerable</button>
-              </div>
-            </div>
+            <h4 style="font-size: 0.98rem; font-weight: 700; color: #ffffff; margin-bottom: 6px;">${t.title}</h4>
+            <p style="font-size: 0.84rem; color: #94a3b8; line-height: 1.4; margin-bottom: 12px;">${t.desc}</p>
+            <button class="btn-stat act-${curState}" data-tid="${t.id}" data-val="${nextVal}" style="width: 100%; padding: 6px 12px; border-radius: 4px; font-weight: 600; font-size: 0.8rem; cursor: pointer;">
+              Status: ${statusText} &bull; Click to change
+            </button>
           `;
           threatList.appendChild(item);
         });
